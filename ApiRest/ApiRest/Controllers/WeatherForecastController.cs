@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace ApiRest.Controllers
-{
+{//cela est une demo d'API REST 
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
@@ -16,7 +16,7 @@ namespace ApiRest.Controllers
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogger<WeatherForecastController> _logger;    
 
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
